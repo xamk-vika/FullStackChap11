@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:lib": "npm --workspace lib run build",
+    "build:api": "npm --workspace lib run build && npm --workspace server run build"
+  },
+  "author": "David Choi",
+  "license": "Apache-2.0",
+  "description": "Source code for book 'Fullstack React TypeScript and Node 2nd Edition'",
+  "workspaces": [
+    "lib",
+    "server"
+  ],
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@types/node": "24.9.2",
+    "tsx": "4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
